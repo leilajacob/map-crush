@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'lookup#search'
 
-  get 'results' => 'lookup#results'
+post 'results' => 'lookup#results'
 
   resources :contacts
   devise_for :users

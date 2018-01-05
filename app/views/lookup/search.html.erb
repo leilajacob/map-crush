@@ -3,12 +3,20 @@
 LOREM IPSUM GENERATOR
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-<%= form_tag(results_path) do %>
+<%= form_tag do %>
 
 <div class="form-group">
 		<%= text_field_tag :city, nil, placeholder: "Search by City", 
                 class: "form-control" %>
 	</div>
+<% end %>
+
+<%= form_tag do %>
+    <div class="form-group">
+        <%= text_field_tag :biz_name, nil, placeholder: "Search by Business Name", 
+            class: "form-control" %>
+    </div>
+
 <% end %>
 
 <%= link_to "Enter a New Contact", new_contact_path %>

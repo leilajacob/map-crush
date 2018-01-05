@@ -1,5 +1,24 @@
+<%= form_tag do %>
+
+<div class="form-group">
+		<%= text_field_tag :city, nil, placeholder: "Search by City", 
+                class: "form-control" %>
+	</div>
+<% end %>
+
+<%= form_tag do %>
+    <div class="form-group">
+        <%= text_field_tag :biz_name, nil, placeholder: "Search by Business Name", 
+            class: "form-control" %>
+    </div>
+
+<% end %>
+
 <ul>
     <% @results.each do |result| %>
     	<li><%= "#{result.first_name} #{result.last_name}" %></li>
     <% end %>
 </ul>
+
+
+
