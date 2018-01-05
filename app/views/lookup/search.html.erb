@@ -1,0 +1,14 @@
+<h1>Welcome to Map Crush!</h1>
+<p>
+LOREM IPSUM GENERATOR
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<%= form_tag(results_path) do %>
+
+<div class="form-group">
+		<%= text_field_tag :city, nil, placeholder: "Search by City", 
+                class: "form-control" %>
+	</div>
+<% end %>
+
+<%= link_to "Enter a New Contact", new_contact_path %>

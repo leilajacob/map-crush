@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'lookup#search'
+
+  get 'results' => 'lookup#results'
+
   resources :contacts
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
